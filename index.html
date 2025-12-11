@@ -1,0 +1,176 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PrimeLife Fitness Club — Coming Soon</title>
+  <meta name="description" content="PrimeLife Fitness Club — Weight training, cardio, personal training, diet consultation. Opening soon in Igatpuri, Nashik" />
+  <style>
+    /* ====== Theme: Black + Red ====== */
+    :root{
+      --bg:#0b0b0b;
+      --card:#111;
+      --accent:#d62828; /* bright red */
+      --accent-2:#8b0000; /* deep red */
+      --muted:#bdbdbd;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Arial; background:var(--bg); color:#fff;}/* ====== Page layout ====== */
+.wrap{min-height:100vh;display:flex;flex-direction:column}
+.hero{position:relative;padding:60px 20px;display:flex;gap:30px;align-items:center;justify-content:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:url('gym-bg.jpg');background-size:cover;background-position:center;filter:brightness(0.35) contrast(1.05);z-index:0}
+
+.container{position:relative;z-index:2;max-width:1100px;width:100%;display:grid;grid-template-columns:1fr 380px;gap:30px;margin:auto}
+
+.left{padding:28px 30px;background:linear-gradient(180deg,var(--glass), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.04);backdrop-filter:blur(4px);border-radius:12px}
+.logo{font-weight:800;font-size:30px;letter-spacing:1px;color:var(--accent)}
+.subtitle{color:var(--muted);margin-top:6px}
+
+.headline{font-size:34px;margin:22px 0 10px;line-height:1.05}
+.cta-row{display:flex;gap:12px;align-items:center;margin-top:18px}
+
+.button{padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;border:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-whatsapp{background:#25D366;color:#0b0b0b}
+.btn-instagram{background:linear-gradient(45deg,#feda75,#d62976);color:#fff}
+
+.promo{display:inline-block;background:rgba(214,40,40,0.12);color:var(--accent);padding:8px 12px;border-radius:10px;font-weight:700;border:1px solid rgba(214,40,40,0.18)}
+
+.features{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.chip{background:rgba(255,255,255,0.03);padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.03)}
+
+.right{padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.card-title{font-weight:800;color:var(--accent);margin-bottom:8px}
+.meta{color:var(--muted);font-size:14px}
+
+.plans{margin-top:12px}
+.plan{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:12px;border-radius:10px;margin-bottom:10px;border:1px solid rgba(255,255,255,0.02)}
+.plan strong{display:block}
+.join{display:block;margin-top:12px;text-align:center}
+
+/* ====== Features section ====== */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:40px auto;max-width:1100px;padding:0 20px}
+.feature-card{background:linear-gradient(180deg,#0f0f0f, #080808);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);text-align:center}
+.feature-card h4{margin:10px 0;color:var(--accent)}
+.feature-card p{color:var(--muted);font-size:14px}
+
+/* ====== Footer ====== */
+footer{margin-top:auto;padding:22px 20px;text-align:center;color:var(--muted);font-size:13px}
+
+/* ====== Responsive ====== */
+@media (max-width:880px){.container{grid-template-columns:1fr}.features-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.features-grid{grid-template-columns:1fr}}
+
+/* ====== Animations ====== */
+.fade-up{animation:fadeUp .9s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.slide-right{animation:slideRight .9s cubic-bezier(.2,.9,.3,1) both}
+@keyframes slideRight{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:none}}
+
+/* subtle model image float */
+.model{position:absolute;right:20px;bottom:0;width:340px;max-width:40%;transform:translateY(12px);z-index:1;filter:drop-shadow(0 30px 45px rgba(0,0,0,0.6));animation:float 4s ease-in-out infinite}
+@keyframes float{0%{transform:translateY(6px)}50%{transform:translateY(-6px)}100%{transform:translateY(6px)}}
+
+/* small helpers */
+a {color:inherit}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="container">
+        <div class="left">
+          <div class="logo">PrimeLife Fitness Club</div>
+          <div class="subtitle">1st Floor, Lunawat Tower, Bank of Baroda, Igatpuri — 422403</div><h2 class="headline">Opening Soon — Transform with strength</h2>
+
+      <div class="promo">First 50 slots — 20% OFF</div>
+
+      <div class="features fade-up">
+        <div class="chip">Weight Training</div>
+        <div class="chip">Cardio</div>
+        <div class="chip">CrossFit</div>
+        <div class="chip">Strength Training</div>
+        <div class="chip">Diet & Nutrition</div>
+        <div class="chip">Personal Training</div>
+      </div>
+
+      <div class="cta-row">
+        <!-- WhatsApp: use country code +91 -->
+        <a class="button btn-whatsapp" href="https://wa.me/918149636959" target="_blank" rel="noopener">Message Owner</a>
+        <a class="button btn-instagram" href="https://www.instagram.com/primelife_fitness_club_111?igsh=NXhuaTY1N2xpa3pz" target="_blank" rel="noopener">Instagram</a>
+        <a class="button btn-primary" href="#join">Join Now</a>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted);font-size:14px">Timings: Morning 7:00 – 10:00 (1‑hour batches) • Evening 16:00 – 21:00 (1–2 hour batches). Female-only batches can be added later.</div>
+
+    </div>
+
+    <aside class="right slide-right">
+      <img class="model" src="model1.png" alt="fitness model" />
+
+      <div class="card-title">Contact</div>
+      <div class="meta">Owner: <strong>Shubhan Dhakoliya</strong></div>
+      <div class="meta" style="margin-top:8px">Phone: <a href="tel:+918149636959">+91 81496 36959</a></div>
+      <div style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&query=1st+Floor+Lunawat+Tower+Bank+of+Baroda+Igatpuri+422403" target="_blank" rel="noopener" class="meta">Open in Google Maps</a></div>
+
+      <div class="plans">
+        <!-- NOTE: you asked not to show fees structure, so this shows a promotional join button only -->
+        <div class="plan">
+          <strong>Limited Offer</strong>
+          <div class="meta">First 50 slots — 20% off. Reserve your spot.</div>
+          <div class="join"><a id="join" class="button btn-primary" href="https://wa.me/918149636959">Reserve on WhatsApp</a></div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;color:var(--muted);font-size:12px">Instagram: <a href="https://www.instagram.com/primelife_fitness_club_111?igsh=NXhuaTY1N2xpa3pz" target="_blank">@primelife_fitness_club_111</a></div>
+    </aside>
+  </div>
+</section>
+
+<!-- Features / services -->
+<section class="features-grid">
+  <div class="feature-card fade-up">
+    <img src="icon-weight.svg" alt="" style="width:64px;height:64px;opacity:0.95" />
+    <h4>Personal Training</h4>
+    <p>One-on-one coaching tailored to your goals.</p>
+  </div>
+  <div class="feature-card fade-up">
+    <img src="icon-cardio.svg" alt="" style="width:64px;height:64px;opacity:0.95" />
+    <h4>Cardio</h4>
+    <p>High-energy cardio zones and classes.</p>
+  </div>
+  <div class="feature-card fade-up">
+    <img src="icon-crossfit.svg" alt="" style="width:64px;height:64px;opacity:0.95" />
+    <h4>CrossFit</h4>
+    <p>Functional training and strength endurance.</p>
+  </div>
+  <div class="feature-card fade-up">
+    <img src="icon-strength.svg" alt="" style="width:64px;height:64px;opacity:0.95" />
+    <h4>Strength Training</h4>
+    <p>Progressive resistance programs and free weights.</p>
+  </div>
+  <div class="feature-card fade-up">
+    <img src="icon-diet.svg" alt="" style="width:64px;height:64px;opacity:0.95" />
+    <h4>Diet & Nutrition</h4>
+    <p>Personalised diet plans and consultations.</p>
+  </div>
+  <div class="feature-card fade-up">
+    <img src="icon-wait.svg" alt="" style="width:64px;height:64px;opacity:0.95" />
+    <h4>Weight Training</h4>
+    <p>Strength cycles, hypertrophy, and technique coaching.</p>
+  </div>
+</section>
+
+<footer>
+  PrimeLife Fitness Club • 1st Floor, Lunawat Tower • Bank of Baroda • Igatpuri • 422403
+</footer>
+
+  </div>  <!--
+    === Quick instructions inside the code ===
+    1) Replace image files (gym-bg.jpg, model1.png, icon-*.svg) by uploading them to the same repo/folder.
+    2) To change contact/timing/promo text: edit the simple text strings near top (search for phone or "First 50 slots").
+    3) The WhatsApp link uses: https://wa.me/<countrycode+number> e.g. +91 -> 918149636959
+  --></body>
+</html>
