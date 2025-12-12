@@ -1,10 +1,31 @@
-<!-- Primelife Fitness Club Website With All Sections + Images (Final Version) --><!DOCTYPE html><html lang="en">
+<!-- Primelife Fitness Club Website – Premium UI, Animations, Modern Icons, Better Fonts --><!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primelife Fitness Club</title>
-    <style>
-        body { margin:0; font-family: Arial, sans-serif; background:#0d0d0d; color:white; }header {
+    <title>Primelife Fitness Club</title><!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin:0;
+        font-family: 'Montserrat', sans-serif;
+        background:#0b0b0b;
+        color:white;
+        overflow-x:hidden;
+    }
+
+    /* Smooth Fade Animations */
+    @keyframes fadeIn {
+        from { opacity:0; transform:translateY(20px); }
+        to { opacity:1; transform:translateY(0); }
+    }
+
+    @keyframes zoomIn {
+        from { transform:scale(0.8); opacity:0; }
+        to { transform:scale(1); opacity:1; }
+    }
+
+    header {
         background:url('https://raw.githubusercontent.com/GitBuddy14/Primelifegym.github.io/refs/heads/main/890c0bf9f2675a7e0e3fc78a33a5b534.jpg');
         background-size:cover;
         background-position:center;
@@ -13,62 +34,86 @@
         align-items:center;
         justify-content:center;
         text-align:center;
+        animation: fadeIn 1.5s ease-out;
         box-shadow:0 0 40px black inset;
     }
 
     header h1 {
         font-size:4rem;
         font-weight:900;
-        text-shadow:4px 4px 10px black;
+        text-shadow:4px 4px 12px black;
+        animation: zoomIn 1.2s ease-out;
     }
 
-    h2 { font-size:2.4rem; margin-bottom:15px; }
-    h3 { font-size:1.8rem; margin-bottom:10px; }
+    h2 {
+        font-size:2.5rem;
+        margin-bottom:15px;
+        animation: fadeIn 1.5s ease-out;
+    }
 
-    section { padding:40px 20px; text-align:center; }
+    h3 {
+        font-size:1.9rem;
+        margin-bottom:10px;
+    }
+
+    section {
+        padding:45px 20px;
+        text-align:center;
+    }
 
     /* Service Cards */
     .service-box {
         background:#141414;
-        margin:30px auto;
-        padding:20px;
-        border-radius:12px;
+        margin:35px auto;
+        padding:25px;
+        border-radius:15px;
         max-width:900px;
-        box-shadow:0 0 15px #000;
+        box-shadow:0 0 20px #000;
         transition:0.3s;
+        animation: fadeIn 1.5s ease-out;
     }
+
     .service-box:hover {
-        transform:scale(1.03);
+        transform:scale(1.04);
         box-shadow:0 0 25px red;
     }
+
     .service-box img {
         width:100%;
         border-radius:12px;
         margin-top:10px;
+        animation: zoomIn 1.2s ease-out;
     }
 
-    /* Buttons */
+    /* Modern Gradient Buttons */
     a.button {
-        background:linear-gradient(45deg, red, #ff1a1a);
-        padding:12px 25px;
+        background:linear-gradient(45deg, #ff0000, #ff4d4d);
+        padding:12px 28px;
         color:white;
         text-decoration:none;
-        border-radius:8px;
+        border-radius:10px;
         font-size:1.2rem;
         display:inline-block;
         margin-top:10px;
         font-weight:bold;
-        box-shadow:0 0 10px red;
+        letter-spacing:1px;
+        transition:0.3s;
+        box-shadow:0 0 12px red;
+    }
+    a.button:hover {
+        transform:scale(1.1);
+        box-shadow:0 0 20px #ff3333;
     }
 
-    /* Contact Box */
+    /* Contact box */
     .contact-box {
         background:#181818;
-        padding:25px;
-        border-radius:12px;
+        padding:28px;
+        border-radius:14px;
         max-width:650px;
         margin:20px auto;
-        box-shadow:0 0 12px #000;
+        box-shadow:0 0 15px #000;
+        animation: fadeIn 1.5s ease-out;
     }
 </style>
 
@@ -76,35 +121,35 @@
 <body><header>
     <h1>PRIMELIFE FITNESS CLUB<br>Opening Soon</h1>
 </header><section>
-    <h2>🔥 First 50 Members – Get 20% OFF 🔥</h2>
+    <h2>🔥 First 50 Members – 20% OFF 🔥</h2>
 </section><section>
-    <h2>💪 Our Premium Services</h2><div class="service-box">
-    <h3>Personal Training</h3>
+    <h2>🏆 Premium Fitness Services</h2><div class="service-box">
+    <h3>💼 Personal Training</h3>
     <img src="https://raw.githubusercontent.com/GitBuddy14/Primelifegym.github.io/refs/heads/main/personal-trainer-1-compressor.jpg" alt="Personal Training">
 </div>
 
 <div class="service-box">
-    <h3>Strength Training</h3>
+    <h3>🏋️ Strength Training</h3>
     <img src="https://raw.githubusercontent.com/GitBuddy14/Primelifegym.github.io/refs/heads/main/strength-training-health-benefits-1440x810.jpg" alt="Strength Training">
 </div>
 
 <div class="service-box">
-    <h3>Diet & Nutrition</h3>
+    <h3>🥗 Diet & Nutrition</h3>
     <img src="https://raw.githubusercontent.com/GitBuddy14/Primelifegym.github.io/refs/heads/main/gym.webp" alt="Nutrition">
 </div>
 
 <div class="service-box">
-    <h3>CrossFit</h3>
+    <h3>🤸 CrossFit</h3>
     <img src="https://raw.githubusercontent.com/GitBuddy14/Primelifegym.github.io/refs/heads/main/cross-fit-gym-service.jpg" alt="CrossFit">
 </div>
 
 <div class="service-box">
-    <h3>Cardio Training</h3>
+    <h3>❤️ Cardio Training</h3>
     <img src="https://raw.githubusercontent.com/GitBuddy14/Primelifegym.github.io/refs/heads/main/should-you-do-cardio-before-or-after-weight-training.jpg" alt="Cardio">
 </div>
 
 <div class="service-box">
-    <h3>Weight Training</h3>
+    <h3>💪 Weight Training</h3>
     <img src="https://raw.githubusercontent.com/GitBuddy14/Primelifegym.github.io/refs/heads/main/body-building-workout.jpg" alt="Weight Training">
 </div>
 
@@ -115,7 +160,7 @@
     <h2>📞 Contact Us</h2>
     <div class="contact-box">
         <p><b>Owner:</b> Shubham Dhakoliya</p>
-        <p><b>Phone:</b> 8149636959</p><a class="button" href="https://wa.me/918149636959">WhatsApp Us</a><br>
+        <p><b>Phone:</b> 8149636959</p><a class="button" href="https://wa.me/918149636959">WhatsApp</a><br>
 
     <a class="button" href="https://www.instagram.com/primelife_fitness_club_111?igsh=NXhuaTY1N2xpa3pz">Instagram</a>
 </div>
